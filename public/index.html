@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC-TAC-TOE (Nakama Only)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="spa.js" defer></script>
+  </head>
+  <body>
+    <div id="errorPopup"></div>
+
+    <main id="login-view">
+      <form id="login-form">
+        <h2>Enter Your Nickname</h2>
+        <div class="form-group">
+          <label for="nickname">Nickname</label>
+          <input
+            type="text"
+            id="nickname"
+            placeholder="Enter your nickname"
+            maxlength="20"
+            minlength="3"
+          />
+        </div>
+        <button id="login-button" type="submit">Enter</button>
+      </form>
+    </main>
+
+    <main id="game-view" class="hidden">
+      <header class="game-header">
+        <div id="welcome-user">Welcome, player!</div>
+        <button id="logout-button">Logout</button>
+      </header>
+
+      <div class="game-content">
+        <section class="game-area">
+          <h2 id="game-status">Start a new match!</h2>
+          <div id="turn-timer"></div>
+
+          <div id="game-board"></div>
+          <div class="game-controls">
+            <button id="start-match-button">Start New Match</button>
+            <button id="leave-match-button" disabled>Leave Match</button>
+          </div>
+        </section>
+
+        <section class="leaderboard-area">
+          <h3>Leaderboard</h3>
+          <ol id="leaderboard-list"></ol>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
