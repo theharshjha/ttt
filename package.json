@@ -1,7 +1,9 @@
 {
   "name": "tictactoe-multiplayer",
   "version": "1.0.0",
-  "authors": ["imtheonly1.in@gmail.com"],
+  "authors": [
+    "imtheonly1.in@gmail.com"
+  ],
   "description": "Real-time multiplayer Tic-Tac-Toe game",
   "type": "module",
   "main": "server.js",
@@ -13,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "pm2": "^6.0.13",
     "socket.io": "^4.6.1"
   }
 }
